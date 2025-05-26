@@ -16,6 +16,7 @@ import Steganography from "@/assets/images/Stego.png";
 import ProofIt from "@/assets/images/ProofIt.png";
 import PolyGT from "@/assets/images/PolyGT.png";
 import { Carousel } from "@/components/ui/carousel";
+import { Timeline } from "@/components/ui/timeline";
 
 export default function Home() {
     const navItems = [
@@ -29,20 +30,18 @@ export default function Home() {
         },
         {
             name: "Experience",
-            link: "#Experience",
+            link: "#experience",
         },
         {
             name: "Skills",
-            link: "#Skills",
+            link: "#skills",
         },
         {
             name: "Contact",
-            link: "#Contact",
+            link: "#contact",
         },
     ];
-
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
     const slideData = [
         {
         title: "AMEX Intern Project",
@@ -68,6 +67,104 @@ export default function Home() {
         title: "Steganography Project",
         button: "Explore Component",
         src: Steganography,
+        },
+    ];
+    const timelineData = [
+        {
+            title: "April 2025 - May 2025",
+            content: (
+                <div>
+                    <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+                        Software engineering internship at American Express
+                    </p>
+                    <div className="grid grid-cols-2 gap-4">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg"
+                            alt="AMEX Logo"
+                            width={500}
+                            height={500}
+                            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+                        />
+                    </div>
+                </div>
+            ),
+        },
+        {
+            title: "January 2025 - May 2025",
+            content: (
+                <div>
+                    <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+                        Software engineering accelerator programme participant with Journi
+                    </p>
+                    <div className="grid grid-cols-2 gap-4">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-_zs9FhLGR_wg4SWefPcj_zXpQ_2_oC9mVw&s"
+                            alt="Journi Logo"
+                            width={500}
+                            height={500}
+                            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+                        />
+                    </div>
+                </div>
+            ),
+        },
+        {
+            title: "October 2024 - May 2025",
+            content: (
+                <div>
+                    <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+                        Began mentoring students through the Debate Mate programme
+                    </p>
+                    <div className="grid grid-cols-2 gap-4">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSohoNElInG_R99HppQykDIpNbpILthgx9suw&s"
+                            alt="Debate Mate Logo"
+                            width={500}
+                            height={500}
+                            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+                        />
+                    </div>
+                </div>
+            ),
+        },
+        {
+            title: "September 2023",
+            content: (
+                <div>
+                    <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+                        Started studying Computer Science at King’s College London
+                    </p>
+                    <div className="grid grid-cols-2 gap-4">
+                        <img
+                            src="https://www.hdruk.ac.uk/wp-content/uploads/2024/04/2560px-Kings_College_London_logo.svg_.png"
+                            alt="KCL Logo"
+                            width={500}
+                            height={500}
+                            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+                        />
+                    </div>
+                </div>
+            ),
+        },
+        {
+            title: "August 2023",
+            content: (
+                <div>
+                    <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+                        Graduated King Edward VI Handsworth School for Girls with 3 A Levels (AAA) in Maths, Further
+                        Maths, Computer science
+                    </p>
+                    <div className="grid grid-cols-2 gap-4">
+                        <img
+                            src="https://kingedwardvifoundation.co.uk/wp-content/uploads/2023/06/HSFG-Stacked-White-Text-1.png"
+                            alt="School crest"
+                            width={500}
+                            height={500}
+                            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+                        />
+                    </div>
+                </div>
+            ),
         },
     ];
 
@@ -115,16 +212,16 @@ export default function Home() {
                     <h3>Incoming SWE Intern @ Trainline | Prev. SWE Intern @ AMEX</h3>
                 </div>
             </div>
-            <div className="relative overflow-hidden w-full h-full py-20">
+            <div id="projects" className="relative overflow-hidden w-full h-full py-20">
                 <Carousel slides={slideData} />
             </div>
-            <div>
-                <p>EXPERIENCE</p>
+            <div id="experience" className="relative w-full overflow-clip">
+                <Timeline data={timelineData} />
             </div>
-            <div>
+            <div id="skills">
                 <p>SKILLS</p>
             </div>
-            <div>
+            <div id="contact">
                 <p>CONTACT</p>
             </div>
         </div>
