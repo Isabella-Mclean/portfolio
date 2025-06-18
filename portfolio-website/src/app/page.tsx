@@ -87,7 +87,7 @@ export default function Home() {
                     <div className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200 grid grid-cols-2">
                         <ul className="list-disc list-inside space-y-2 space-x-3">
                             <li>Worked on a project for 3 weeks, in a team of 5, designing and developing a new sidebar for
-                                one of AMEX's agent-facing systems</li>
+                                one of AMEX’s agent-facing systems</li>
                             <li>Designed, pitched, and implemented the sidebar idea</li>
                             <li>Built the frontend using React, interacting with APIs for dynamic content</li>
                             <li>Completed the base task, and all three extension goals, allowing agents to provide
