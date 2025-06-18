@@ -10,7 +10,6 @@ import {
 
 import React, { useRef, useState } from "react";
 
-
 interface NavbarProps {
     children: React.ReactNode;
     className?: string;
@@ -103,7 +102,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
                 minWidth: "800px",
             }}
             className={cn(
-                "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-transparent px-4 py-2 lg:flex dark:bg-transparent",
+                "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-transparent px-4 py-5 lg:flex dark:bg-transparent",
                 visible && "bg-white/80 dark:bg-neutral-950/80",
                 className,
             )}
@@ -128,7 +127,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
                 <a
                     onMouseEnter={() => setHovered(idx)}
                     onClick={onItemClick}
-                    className="relative px-4 py-2 text-neutral-600 dark:text-neutral-300"
+                    className="relative px-4 py-1 text-neutral-400 dark:text-neutral-300"
                     key={`link-${idx}`}
                     href={item.link}
                 >
@@ -195,7 +194,6 @@ export const MobileNavMenu = ({
                                   children,
                                   className,
                                   isOpen,
-                                  onClose,
                               }: MobileNavMenuProps) => {
     return (
         <AnimatePresence>
