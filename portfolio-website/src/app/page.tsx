@@ -154,19 +154,18 @@ export default function Home() {
                     <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
                         Mentored students through the Debate Mate programme
                     </p>
-                    <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+                    <p className=" text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
                         Involved:
-                        <ul className="list-disc list-inside space-y-2">
-                            <li>Planning lessons each week for a class of students, generally either 10 or 20</li>
-                            <li>Coordinating with the school and Debate Mate team, as well as leading the other mentor
-                            to ensure a smooth running of our service</li>
-                            <li>Training to become a debate competition judge</li>
-                            <li>Judging at varying level competitions throughout the year</li>
-                            <li>Filling in for the head debate team when necessary</li>
-                        </ul>
-
-
                     </p>
+                    <ul className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200
+                    list-disc list-inside space-y-2">
+                        <li>Planning lessons each week for a class of students, generally either 10 or 20</li>
+                        <li>Coordinating with the school and Debate Mate team, as well as leading the other mentor
+                            to ensure a smooth running of our service</li>
+                        <li>Training to become a debate competition judge</li>
+                        <li>Judging at varying level competitions throughout the year</li>
+                        <li>Filling in for the head debate team when necessary</li>
+                    </ul>
                 </div>
             ),
         },
