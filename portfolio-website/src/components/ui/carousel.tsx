@@ -7,6 +7,7 @@ interface SlideData {
   title: string;
   button: string;
   src: string | StaticImageData;
+  link: string;
 }
 
 interface SlideProps {
@@ -171,6 +172,7 @@ export function Carousel({ slides }: CarouselProps) {
     if (current !== index) {
       setCurrent(index);
     }
+    window.open(slides[index].link,"_blank");
   };
 
   const id = useId();

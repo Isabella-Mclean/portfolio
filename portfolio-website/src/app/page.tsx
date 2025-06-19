@@ -54,28 +54,33 @@ export default function Home() {
     const slideData = [
         {
         title: "AMEX Intern Project",
-        button: "Explore Component",
-        src: Lego
+        button: "View project post",
+        src: Lego,
+        link:"https://www.linkedin.com/posts/isabella-f-m_teamamex-journi-internship-activity-7319099987143897088-v26N?utm_source=share&utm_medium=member_desktop&rcm=ACoAADSEhX8BnQdletYuV5UHTQERpeezEQdcBfc",
         },
         {
         title: "ProofIt",
-        button: "Explore Component",
+        button: "View project",
         src: ProofIt,
+        link: "https://proofit.uk/",
         },
         {
         title: "PolyGT",
-        button: "Explore Component",
+        button: "View project",
         src: PolyGT,
+        link:"https://polygtwebsite.vercel.app/",
         },
         {
         title: "Pantry Tracker",
-        button: "Explore Component",
+        button: "View project",
         src: PantryTracker,
+        link: "https://pantry-tracker-three.vercel.app/",
         },
         {
         title: "Steganography Project",
-        button: "Explore Component",
+        button: "View project",
         src: Steganography,
+        link:"https://github.com/Isabella-Mclean/steganographyTool",
         },
     ];
     const timelineData = [
