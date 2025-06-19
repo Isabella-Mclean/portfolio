@@ -24,6 +24,8 @@ import ProofIt from "@/assets/images/ProofIt.png";
 import PolyGT from "@/assets/images/PolyGT.png";
 import { Carousel } from "@/components/ui/carousel";
 import { Timeline } from "@/components/ui/timeline";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+
 
 export default function Home() {
     const navItems = [
@@ -242,6 +244,20 @@ export default function Home() {
             ),
         },
     ];
+    const skills = [
+    {
+        description: "Python, Java, SQL, Scala, C++, ROS, React.js ",
+        title: "Programming languages",
+    },
+    {
+        description: "TailwindCSS, Linux, Windows, MAC, Github, Jest",
+        title: "Tools",
+    },
+    {
+        description: "Project management, B1 German, Teamwork, Leadership, AGILE Workflows",
+        title: "Non-technical",
+    },
+    ]
 
     return (
         <div className="flex flex-col items-center justify-center gap-12">
@@ -293,8 +309,14 @@ export default function Home() {
             <div id="experience" className="relative w-full overflow-clip">
                 <Timeline data={timelineData} />
             </div>
-            <div id="skills">
-                <p>SKILLS</p>
+            <div id="skills" className="relative w-full max-w-8/10 overflow-clip">
+                <div className="h-[40rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
+                    <InfiniteMovingCards
+                        items={skills}
+                        direction="right"
+                        speed="normal"
+                    />
+                </div>
             </div>
             <div id="contact">
                 <footer >
@@ -330,7 +352,7 @@ export default function Home() {
                             </a>
                         </li>
                     </ul>
-                    <ul className="copyright">
+                    <ul className="copyright mb-5">
                         <li>&copy; Isabella Mclean</li>
                     </ul>
                 </footer>
