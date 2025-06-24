@@ -6,6 +6,7 @@ import RiverView from "@/assets/images/RiverView.jpg";
 import StrandViewIndoors from "@/assets/images/StrandViewIndoors.jpg";
 import StrandViewOutdoors from "@/assets/images/StrandViewOutdoors.jpg";
 import Image from 'next/image';
+import React from 'react';
 
 export const timelineData = [
     {

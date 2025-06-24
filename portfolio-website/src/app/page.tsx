@@ -8,6 +8,7 @@ import { slideData } from "@/assets/data/slideData";
 import  NavBar  from "@/components/NavBar";
 import  About  from "@/components/About";
 import  Contact  from "@/components/Contact";
+import React from "react";
 
 export default function Page() {
     return (

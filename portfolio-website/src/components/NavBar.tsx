@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/resizable-navbar";
 import {navItems} from "@/assets/data/navItems";
 import {useState} from "react";
+import React from "react";
 
 export default function NavBar(){
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
