@@ -10,11 +10,35 @@ import React from 'react';
 
 export const timelineData = [
     {
+        title: "July 2025 - September 2025",
+        content: (
+            <div>
+                <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+                    Software engineering internship at Trainline  (.NET / C# / React / Git / Agile workflow / SQL)
+                </p>
+                <div className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200 grid grid-cols-2">
+                    <ul className="list-disc list-inside space-y-2 space-x-3">
+                        <li>Collaborating with the existing team to write tickets, develop code, attend scrum ceremonies
+                            , liaise with the product and design team for new features on a B2B platform</li>
+                        <li>Full-stack activities include coding, testing and deploying backend code for integration
+                            with frontend repositories
+                        </li>
+                    </ul>
+                    <ul className="list-disc list-inside space-y-2">
+                       <li>Working with a microservice infrastructure to develop small components within the larger
+                           system, such as updating endpoints and REST API responses to support new features, as well
+                           as updating the frontend to handle these changes</li>
+                    </ul>
+                </div>
+            </div>
+        ),
+    },
+    {
         title: "March 2025 - April 2025",
         content: (
             <div>
                 <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-                    Software engineering internship at American Express
+                    Software engineering internship at American Express (React / Git / API handling)
                 </p>
                 <div className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200 grid grid-cols-2">
                     <ul className="list-disc list-inside space-y-2 space-x-3">
