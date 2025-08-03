@@ -14,7 +14,7 @@ export default function About(){
             <div className="flex flex-col">
                 <h1>ISABELLA MCLEAN</h1>
                 <h3>BSc CS @ King’s College London 2026 </h3>
-                <h3>Incoming SWE Intern @ Trainline | Prev. SWE Intern @ AMEX</h3>
+                <h3>SWE Intern @ Trainline | Prev. SWE Intern @ AMEX</h3>
             </div>
         </div>
     )
