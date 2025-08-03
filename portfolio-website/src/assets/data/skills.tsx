@@ -1,6 +1,6 @@
 export const skills = [
     {
-        description: "Python, Java, SQL, Scala, C++, ROS, React.js ",
+        description: "Python, Java, SQL, Scala, C++, ROS, React.js, Typescript, C#",
         title: "Programming languages",
     },
     {
