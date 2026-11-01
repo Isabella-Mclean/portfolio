@@ -13,8 +13,9 @@ export default function About(){
                 className="max-w-32 h-auto"/>
             <div className="flex flex-col">
                 <h1>ISABELLA MCLEAN</h1>
-                <h3>BSc CS @ King’s College London 2026 </h3>
-                <h3>SWE Intern @ Trainline | Prev. SWE Intern @ AMEX</h3>
+                <h3>Graduate Software Engineer @ Augustus</h3>
+                <h3>Prev. SWE Intern @ AMEX and Trainline</h3>
+                <h3>First Class BSc (Hons) CS @ King’s College London 2026 </h3>
             </div>
         </div>
     )

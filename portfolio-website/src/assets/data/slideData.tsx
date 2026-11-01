@@ -15,7 +15,7 @@ export const slideData = [
         title: "ProofIt",
         button: "View project",
         src: ProofIt,
-        link: "https://proofit.uk/",
+        link:''
     },
     {
         title: "PolyGT",
