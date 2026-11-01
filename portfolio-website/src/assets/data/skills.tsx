@@ -12,7 +12,7 @@ export const skills = [
         title: "Tools",
     },
     {
-        description: "Project management, B1 German, Teamwork, Leadership, AGILE Workflows, Interviewing",
+        description: "Project management, B1 German, Teamwork, Leadership, AGILE Workflows",
         title: "Non-technical",
     },
 ]
