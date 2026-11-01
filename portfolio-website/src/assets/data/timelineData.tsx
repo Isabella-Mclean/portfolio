@@ -10,6 +10,32 @@ import React from 'react';
 
 export const timelineData = [
     {
+        title: "June 2026",
+        content: (
+            <div>
+                <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+                    Graduate Software Engineer at Augustus (Typescript / React / Git / SQL / Temporal / Grafana / AI tooling)
+                </p>
+                <div className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200 grid grid-cols-2">
+                    <ul className="list-disc list-inside space-y-2 space-x-3">
+                        <p>Billing platform</p>
+                        <li>Built an automated billing system that generates a billing event per transaction (~580k events/week) and handles monthly invoice payments to and from client accounts, meeting strict financial and audit requirements.</li>
+                        <li>Automated invoicing cut time to payment from 1 week to less than 2 days on average, with no client effort required.</li>
+                        <li>Tightened validation and enforced strict rules across all billing processes to prevent repeat incidents, reducing the failure rate from 1.41% to 0.02%.</li>
+                        <li>Improved logging and alerting system-wide so incidents can be acted on and remediated as soon as an alert fires; built a dashboard giving visibility into billing events and invoicing.</li>
+                        <li>Built legacy-code cleanup and decoupling into the development process to reduce tech debt.</li>
+                    </ul>
+                    <ul className="list-disc list-inside space-y-2">
+                        <p>Admin dashboard & payment operations</p>
+                        <li>Delivered the new admin dashboard that replaced our legacy system with little disruption, so compliance-critical flows kept working with no coverage gap during the switch-over.</li>
+                        <li>Independently led a fund-seizure project within payment operations, owning scoping, planning and building, replacing hacky tooling with a smoother dashboard flow.</li>
+                        <li>•	Ramped up across four areas in three months (transaction monitoring, admin API, suspense funds, accounts and billing), using AI tooling to navigate unfamiliar code quickly.</li>
+                    </ul>
+                </div>
+            </div>
+        ),
+    },
+    {
         title: "July 2025 - September 2025",
         content: (
             <div>
@@ -126,11 +152,11 @@ export const timelineData = [
         ),
     },
     {
-        title: "September 2023",
+        title: "September 2023-June 2026",
         content: (
             <div>
                 <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-                    Began studying Computer Science at King’s College London
+                   First class BSc (Honours) Computer Science at King’s College London
                 </p>
                 <div className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200 grid grid-cols-2">
                     <ul className="list-disc list-inside space-y-2">
